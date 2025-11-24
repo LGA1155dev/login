@@ -1,0 +1,17 @@
+ @charset "UTF-8";
+
+
+ @media screen and (min-width: 320px) and (max-width: 782) { 
+    
+ }
+
+ @media screen and (min-width: 782px) and (max-width: 992px) {
+    body{
+        background-color: rgba(137, 43, 226, 0.452);
+    }
+ }
+
+
+ @media screen and (min-width: 992px) and (max-width: 1080) {
+
+ }

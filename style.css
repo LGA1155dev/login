@@ -1,0 +1,26 @@
+ @charset "UTF-8";
+
+ /*
+ 
+ Paleta de cores:
+ Verde: #49a09d
+ Lilas: #5f2cd82
+
+ */
+
+#formulario{
+    padding: 10%;
+    
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+div#campo{
+    
+    margin: auto;
+}
+
+
+.imagem{
+    background-image: url(imagens/login-banco.jpg);
+}
