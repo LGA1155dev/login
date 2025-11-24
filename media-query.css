@@ -1,17 +1,66 @@
  @charset "UTF-8";
 
+/* Typical Device Beakpoints
 
- @media screen and (min-width: 320px) and (max-width: 782) { 
-    
- }
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
 
- @media screen and (min-width: 782px) and (max-width: 992px) {
+*/
+
+/* Não adianta qnd ffazer media query e for fz o formulario, colocar tal item para a direita e tal item para a esquerda com o float, mas não configurar a largura do item, assim a imagem do item x que você quer posicionar para a esquerda ou para a direita não vai aparecer, e você vai ficar puto vai botar  a culpa no codigo inteiro e talvez até refaze-lo só de raiva, mas você não vai perceber que só esqueceu de configurar a karalha da largura do item... */
+
+@media  screen and (min-width: 768px) and (max-width: 992px) {
+
     body{
-        background-color: rgba(137, 43, 226, 0.452);
+        background-image: linear-gradient(to top, #0feedb7a, #00c2b871, #9409f09d, #7c0ed69f);
     }
- }
+
+    section#login{
+        width: 90vw;
+    }    
+
+    section#login > div#imagem{
+        float: left;
+        width: 35vw;
+        height: 100%;
+    }
+
+    section#login > div#formulario{
+        float: right;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    section#login{
+        width: 950px;
+
+    }
+
+    section#login > div#imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario{
+        float: left;
+        width: 50%;
+    }
+
+    div#formulario > h1{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
 
 
- @media screen and (min-width: 992px) and (max-width: 1080) {
+    div#formulario > p {
+        font-size: 1.2em;
 
- }
+    }
+}
